@@ -1,0 +1,21 @@
+.cardDiv {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  margin: 10px auto;
+}
+
+img {
+  width: 80%;
+}
+
+a.link,
+a.link:visited {
+  color: darkorange;
+  text-decoration: none;
+  display: inline;
+  margin-right: 20px;
+}
