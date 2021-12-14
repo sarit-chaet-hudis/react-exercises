@@ -19,9 +19,9 @@ class Spinner extends React.Component {
     if (this.state.spinnerDisplay) {
       return (
         <div className="dots">
-          <div class="dot hop"></div>
-          <div class="dot hop delay1"></div>
-          <div class="dot hop delay2"></div>
+          <div className="dot hop"></div>
+          <div className="dot hop delay1"></div>
+          <div className="dot hop delay2"></div>
         </div>
       );
     } else {
