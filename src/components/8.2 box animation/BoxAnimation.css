@@ -1,0 +1,32 @@
+.movingBox {
+  background-color: salmon;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.enterBox {
+  animation: enter 1s ease-in;
+}
+
+.exitBox {
+  animation: exit 1s ease-in forwards;
+}
+
+@keyframes enter {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes exit {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100px);
+  }
+}
