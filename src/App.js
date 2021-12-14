@@ -8,6 +8,7 @@ import React from "react";
 // import Increment from "./components/7.3 increment/Increment";
 // import LifeCycle from "./components/8.1 life cycle/LifeCycle";
 import BoxAnimation from "./components/8.2 box animation/BoxAnimation";
+import Spinner from "./components/9.1 spinner/Spinner";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <BoxAnimation width="50px" height="10px" />
       <BoxAnimation width="30px" height="50px" />
       <BoxAnimation width="20px" height="40px" />
+      <Spinner />
     </div>
   );
 }

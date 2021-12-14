@@ -1,0 +1,45 @@
+.dots {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+  position: relative;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+.hop {
+  animation: 0.5s ease-out infinite alternate hop;
+}
+
+@keyframes hop {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+.delay1 {
+  animation-delay: 0.3s;
+}
+
+.delay2 {
+  animation-delay: 0.6s;
+}
+
+.dot.hop.delay1 {
+  left: 20px;
+}
+
+.dot.hop.delay2 {
+  left: 50px;
+}

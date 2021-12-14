@@ -18,10 +18,11 @@ class BoxAnimation extends React.Component {
   }
 
   render() {
+    let { width, height } = this.props;
     return (
       <div
         className={this.state.class}
-        style={{ width: this.props.width, height: this.props.height }}
+        style={{ width: width, height: height }}
       ></div>
     );
   }
