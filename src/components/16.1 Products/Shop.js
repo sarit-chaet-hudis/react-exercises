@@ -3,7 +3,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import Header from "./Header";
 import Homepage from "./Homepage";
 import Products from "./Products";
-import ProductPage from "./ProductPage";
+import ProductPageWrapper from "./ProductPageWrapper";
 
 class Shop extends React.Component {
   render() {
@@ -14,7 +14,7 @@ class Shop extends React.Component {
             <Route path="/" component={Header} />
             <Route path="/" exact component={Homepage} />
             <Route path="/products" exact component={Products} />
-            <Route path="/products/details/" component={ProductPage} />
+            <Route path="/product/:id" component={ProductPageWrapper} />
           </>
         </BrowserRouter>
       </>

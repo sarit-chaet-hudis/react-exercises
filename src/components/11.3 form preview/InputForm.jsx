@@ -1,20 +1,15 @@
 import React from "react";
 
 class InputForm extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   state = {
-    firstNameTerm: "",
-    lastNameTerm: "",
-    textAreaTerm: "",
+    firstName: "",
+    lastName: "",
+    textArea: "",
     selectedCoin: "",
   };
 
-  onFNameChange(e) {
-    this.setState({ firstNameTerm: e.target.value });
-    console.log(`first name term is ${this.state.firstNameTerm}`);
+  onChange(e) {
+    this.setState({ [e.target.name]: e.target.value });
   }
 
   render() {
@@ -25,8 +20,8 @@ class InputForm extends React.Component {
           name="firstName"
           id="firstName"
           placeholder="First Name"
-          value={this.state.firstNameTerm}
-          onChange={(e) => this.onFNameChange(e)}
+          value={this.state.firstName}
+          onChange={(e) => this.onChange(e)}
         />
         <br />
         <input
@@ -34,6 +29,8 @@ class InputForm extends React.Component {
           name="lastName"
           id="lastName"
           placeholder="Last Name"
+          value={this.state.lastName}
+          onChange={(e) => this.onChange(e)}
         />
         <br />
         <select name="coin" id="coin">
@@ -65,6 +62,10 @@ class InputForm extends React.Component {
         >
           Submit
         </button>
+        <br />
+        <p>
+          my name is {this.state.firstName} {this.state.lastName}
+        </p>
       </form>
     );
   }

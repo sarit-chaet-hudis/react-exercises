@@ -7,11 +7,7 @@ class Products extends React.Component {
     return Store.map((prod) => {
       return (
         <>
-          <Link
-            to={`/products/details/${prod.id}`}
-            id={prod.id}
-            prodData={prod}
-          >
+          <Link to={`/product/${prod.id}`} id={prod.id} prodData={prod}>
             {prod.title}
           </Link>
           <br />
