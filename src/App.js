@@ -6,6 +6,7 @@ import DeletingItems from "./components/Hooks/18.4 Deleting/DeletingItems";
 // import Fetch from "./components/Hooks/19.1 Fetch/Fetch";
 //import Cancel from "./components/Hooks/Cancel";
 import Editing from "./components/Hooks/21.1 Editing/Editing";
+import HoverBW from "./components/Hooks/21.3 HoverBW/HoverBW";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Time />
       <DeletingItems />
       <Editing />
+      <HoverBW />
     </div>
   );
 }

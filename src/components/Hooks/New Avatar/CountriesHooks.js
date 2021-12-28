@@ -18,19 +18,15 @@ const CountriesHooks = (props) => {
   };
 
   useEffect(() => {
-    try {
-      const Search = async () => {
-        const { data } = await axios.get("https://restcountries.com/v2/all", {
-          signal: props.controller.signal,
-        });
+    const Search = async () => {
+      const { data } = await axios.get("https://restcountries.com/v2/all", {
+        signal: props.controller.signal,
+      });
 
-        setResult(data);
-        console.log(data);
-        Search();
-      };
-    } catch (err) {
-      console.log(`error: ${err}`);
-    }
+      setResult(data);
+      console.log(data);
+    };
+    Search();
   }, []);
 
   return (

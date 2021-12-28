@@ -1,0 +1,6 @@
+.blackwhite {
+  filter: grayscale(100%);
+}
+.color {
+  filter: grayscale(0%);
+}
